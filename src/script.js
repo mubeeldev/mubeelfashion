@@ -1,0 +1,1 @@
+console.log("This is a placeholder for the script.js file. You can add your JavaScript code here.");

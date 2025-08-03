@@ -8,11 +8,20 @@
     --accent-color: #ffdb89;
     --text-color: #ffffff;
 }
-
 @layer base {
     body{
         background-color: var(--primary-color);
         color: var(--text-color);
+    };
+    header{
+        background-color: black;
     }
 }
 
+.product-cont{
+    /* background: url("https://www.pinterest./pin/29766047532423012/");
+    background-position: center;
+    background-size: cover;
+     */
+
+}
