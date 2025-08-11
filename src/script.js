@@ -42,6 +42,14 @@ function generateImg(item, product) {
         downBtnCont.appendChild(downBtn);
         popDiv.appendChild(downBtnCont);
         downBtn.classList.add('btn');
+        downBtn.classList.add('bg-blue-500');
+        downBtn.classList.add('text-white');
+        downBtn.classList.add('px-4');
+        downBtn.classList.add('py-2');
+        downBtn.classList.add('rounded');
+        downBtn.classList.add('mt-4');
+        downBtn.classList.add('hover:bg-blue-600');
+
         downBtn.innerText = 'Download';
 
     // on clicking the image view
