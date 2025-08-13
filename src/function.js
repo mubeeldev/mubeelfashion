@@ -32,7 +32,7 @@ export function downloadImage(products) {
 }
 // generating the image in the grid
 // and creating the popUp
-// and downloading the images
+// and downloading the image
 
 
 
@@ -49,34 +49,32 @@ function generateImg(item, product) {
     // creating the popUp
     productItem.addEventListener('click', () => {
         let popUp = document.querySelector('.popup');
+        // let popDiv = document.createElement('div');
         popUp.style.display = 'flex';
-        let imageCont = document.querySelector('.img-cont');
-        imageCont.innerHTML = '';
         let img = document.createElement('img');
-        img.classList.add('h-full', 'w-full', 'object-cover');
+        img.classList.add('h-full');
+        img.classList.add('w-full');
+        img.classList.add('object-cover');
         img.src = `${product.image}`;
+        let imageCont= document.querySelector('.img-cont')
         imageCont.appendChild(img);
-
+        // popUp.appendChild(popDiv);
         let productName = document.querySelector('.style-name');
         productName.innerText = product.name;
         let description = document.querySelector('.description');
         description.innerText = product.description;
 
-        // Attach download event each time popup is shown
-        let downloadBtn = document.querySelector('.download-btn');
-        downloadBtn.onclick = () => {
-            const link = document.createElement('a');
-            link.href = product.image;
-            link.download = product.name;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        };
+        downloadImage([product]);
 
+        // on clicking the image view
         popUp.addEventListener('click', () => {
-            popUp.style.display = 'none';
-            imageCont.innerHTML = '';
-            description.innerText = '';
+        popUp.style.display = 'none';
+        imageCont.innerHTML = '';
+        description.innerText = '';
         });
-    });
+        
+
+    
+    
+});
 }
