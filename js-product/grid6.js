@@ -1,7 +1,9 @@
-export const products1 =[
+export const products6 =[
 
     // adding some sample products
-    {image:"https://i.pinimg.com/736x/0b/37/7e/0b377e13ec172f28136460f422213276.jpg"},
+    {image:"https://i.pinimg.com/736x/0b/37/7e/0b377e13ec172f28136460f422213276.jpg",
+        description:"The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona."
+    },
     {image:"https://i.pinimg.com/1200x/b2/f3/df/b2f3dfc31b9cf4b357bcd33bace04a22.jpg"},
     {image:"https://i.pinimg.com/736x/56/6c/2e/566c2eeb51ea766598fccc604ead2da0.jpg"},
 
