@@ -12,7 +12,7 @@
 </head>
 <body class="w-full h-dvh flex flex-col px-[2%] md:px-[10%] xl:px-[20%] relative box-border overflow-hidden">
     <header class="flex 
-                    flex-col
+                    sm:flex-col
                     justify-center 
                     md:flex-row 
                     md:justify-around 
@@ -37,7 +37,12 @@
         </div>
     </header>
     <main class="mt-20 w-full">
-        <section id="home" class="grid grid-cols-2 md:grid-cols-6 gap-4 relative">
+        <section id="home" class="grid 
+                            grid-cols-2 
+                            md:grid-cols-4 
+                            lg:grid-cols-6 
+                            gap-4 
+                            relative">
 
             <div class="popup flex flex-col bg-black shadow-sm border border-slate-200 rounded-lg my-6 w-96 fixed top-2 hidden">
                 <div class="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center img-cont">
@@ -56,7 +61,25 @@
                 </p>
             </div>
             <div class="flex justify-center p-6 pt-2 gap-7">
-                <button class="min-w-32  rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                <button class="min-w-32  
+                        rounded-md
+                        bg-slate-800 
+                        py-2 px-5 border 
+                        border-transparent 
+                        text-center text-sm
+                        text-white 
+                        transition-all 
+                        shadow-md 
+                        hover:shadow-lg 
+                        focus:bg-slate-700 
+                        focus:shadow-none
+                        active:bg-slate-700 
+                        hover:bg-slate-700 
+                        active:shadow-none 
+                        disabled:pointer-events-none 
+                        disabled:opacity-50 
+                        disabled:shadow-none
+                        download-btn" type="button">
                 Download
                 </button>
             </div>
@@ -91,7 +114,7 @@
                 <!-- Example product images --> 
                 <!-- Add more images as needed -->
             </div>
-            
+
             <div class="product-cont6 flex flex-col gap-4">
                 <!-- Example product images --> 
                 <!-- Add more images as needed -->
