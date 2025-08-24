@@ -38,11 +38,13 @@ export function downloadImage(products) {
 
 function generateImg(item, product) {
     let productItem = document.createElement('div');
+    // productItem.classList.add('h-60');
+    productItem.classList.add('w-60');
     item.appendChild(productItem);
     let img = document.createElement('img');
     img.src = `${product.image}`;
-    img.classList.add('h-auto');
-    img.classList.add('max-w-full');
+    img.classList.add('h-full');
+    img.classList.add('w-full');
     img.classList.add('rounded-lg');
     productItem.appendChild(img);
 
@@ -51,6 +53,13 @@ function generateImg(item, product) {
         let popUp = document.querySelector('.popup');
         // let popDiv = document.createElement('div');
         popUp.style.display = 'flex';
+        popUp.style.justifyContent = 'center';
+        popUp.style.alignItems = 'center';
+        popUp.style.position = 'fixed';
+        popUp.style.top = '0';
+        popUp.style.left = '0';
+        popUp.style.width = '100%';
+        popUp.style.height = '100%';
         let img = document.createElement('img');
         img.classList.add('h-full');
         img.classList.add('w-full');

@@ -38,9 +38,12 @@
     </header>
     <main class="mt-20 w-full">
         <section id="home" class="grid 
-                            grid-cols-2 
-                            md:grid-cols-4 
-                            lg:grid-cols-6 
+                            auto-cols-auto
+                            auto-rows-auto
+                            grid-warps-auto
+                            
+                            <!-- md:grid-cols-4  -->
+                            <!-- lg:grid-cols-6  -->
                             gap-4 
                             relative">
 
@@ -48,48 +51,44 @@
                 <div class="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center img-cont">
                     <!-- <img class="w-full h-full object-cover" src="https://docs.material-tailwind.com/img/team-3.jpg" alt="profile-picture" /> -->
                 </div>
-            <div class="p-6 text-center">
-                <h4 class="mb-1 text-xl font-semibold text-slate-800 style-name">
-                Natalie Paisley
-                </h4>
-                <p
-                class="text-sm font-semibold text-slate-500 uppercase">
-                mubeel fashion
-                </p>
-                <p class="text-base text-slate-600 mt-4 font-light description ">
-                    The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
-                </p>
+                <div class="p-6 text-center">
+                    <h4 class="mb-1 text-xl font-semibold text-slate-800 style-name">
+                    Natalie Paisley
+                    </h4>
+                    <p
+                    class="text-sm font-bold text-slate-500 uppercase">
+                    mubeel fashion
+                    </p>
+                    <p class="text-base text-slate-600 mt-4 font-light description ">
+                        The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona.
+                    </p>
+                </div>
+                <div class="flex justify-center p-6 pt-2 gap-7">
+                    <button class="min-w-32  
+                            rounded-md
+                            <!-- bg-slate-800  -->
+                            py-2 px-5
+                            border-transparent 
+                            bg-yellow-600
+                            text-center text-sm
+                            text-white 
+                            transition-all 
+                            shadow-md 
+                            hover:shadow-lg 
+                            focus:bg-slate-700 
+                            focus:shadow-none
+                            active:bg-slate-700 
+                            hover:bg-slate-700 
+                            active:shadow-none 
+                            disabled:pointer-events-none 
+                            disabled:opacity-50 
+                            disabled:shadow-none
+                            download-btn" type="button">
+                    Download
+                    </button>
+                </div>
             </div>
-            <div class="flex justify-center p-6 pt-2 gap-7">
-                <button class="min-w-32  
-                        rounded-md
-                        bg-slate-800 
-                        py-2 px-5 border 
-                        border-transparent 
-                        text-center text-sm
-                        text-white 
-                        transition-all 
-                        shadow-md 
-                        hover:shadow-lg 
-                        focus:bg-slate-700 
-                        focus:shadow-none
-                        active:bg-slate-700 
-                        hover:bg-slate-700 
-                        active:shadow-none 
-                        disabled:pointer-events-none 
-                        disabled:opacity-50 
-                        disabled:shadow-none
-                        download-btn" type="button">
-                Download
-                </button>
-            </div>
-            </div>
-
-
-            <!-- popup div  -->
-            <!-- <div class="flex flex-col justify-center hidden fixed top-auto m-4-09 popup"></div> -->
-
-
+            
             <div class="product-cont flex flex-col gap-4">
                 <!-- Example product images --> 
                 <!-- Add more images as needed -->
