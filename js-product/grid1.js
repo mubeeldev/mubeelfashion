@@ -106,3 +106,4 @@ export const products1 =[
 
     
 ];
+console.log('grid 1',products1.length);

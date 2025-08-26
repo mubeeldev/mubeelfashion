@@ -10,3 +10,4 @@ export const product5 = [
 
 
 ];
+console.log('grid 5 ', product5.length);

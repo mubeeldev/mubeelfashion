@@ -9,3 +9,5 @@ export const product2 = [
         description:"The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to Naviglio where you can enjoy the main night life in Barcelona."
     },
 ];
+
+console.log('grid 2',product2.length);

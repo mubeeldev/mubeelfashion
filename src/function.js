@@ -53,17 +53,12 @@ function generateImg(item, product) {
         let popUp = document.querySelector('.popup');
         // let popDiv = document.createElement('div');
         popUp.style.display = 'flex';
-        popUp.style.justifyContent = 'center';
-        popUp.style.alignItems = 'center';
-        popUp.style.position = 'fixed';
-        popUp.style.top = '0';
-        popUp.style.left = '0';
-        popUp.style.width = '100%';
-        popUp.style.height = '100%';
+
+        // popUp.classList.add('md:h-screen');
         let img = document.createElement('img');
         img.classList.add('h-full');
         img.classList.add('w-full');
-        img.classList.add('object-cover');
+        img.classList.add('rounded-lg');
         img.src = `${product.image}`;
         let imageCont= document.querySelector('.img-cont')
         imageCont.appendChild(img);
