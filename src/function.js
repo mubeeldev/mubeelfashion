@@ -56,8 +56,8 @@ function generateImg(item, product) {
 
         // popUp.classList.add('md:h-screen');
         let img = document.createElement('img');
-        img.classList.add('h-full');
-        img.classList.add('w-full');
+        img.classList.add('h-fi');
+        img.classList.add('w-fill');
         img.classList.add('rounded-lg');
         img.src = `${product.image}`;
         let imageCont= document.querySelector('.img-cont')
